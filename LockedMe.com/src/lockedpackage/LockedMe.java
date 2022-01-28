@@ -228,5 +228,18 @@ public class LockedMe
     	 mainCallMethod();
      }
      
-     
+  	public static void getBusinessOperations()
+  	{
+  		Scanner obj = new Scanner(System.in);
+ 	    int choice=1;
+ 	    
+ 	    while(choice>0 && choice<5)
+ 	    {
+ 	    	try
+ 	    	{
+ 	    	subDisplayMenu();
+ 	    	System.out.println("Enter your Choice:");
+ 	    	
+ 	    	choice=Integer.parseInt(obj.nextLine());
+ 	    	    
 }
