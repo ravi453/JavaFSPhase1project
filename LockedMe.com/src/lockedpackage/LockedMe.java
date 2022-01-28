@@ -241,5 +241,33 @@ public class LockedMe
  	    	System.out.println("Enter your Choice:");
  	    	
  	    	choice=Integer.parseInt(obj.nextLine());
+ 	    	switch(choice)
+ 	    	{
+ 	    	case 1:createFiles();
+ 	    	break;
+ 	    	case 2:deleteFiles();
+ 	    	break;
+ 	    	case 3:searchFiles();
+ 	    	break;
+ 	    	case 4:goBackProgram();
+ 	    	break;
+ 	    	default:System.out.println("Invalid Option : Please Enter Number between 1 to 4.");
+ 	    	break;
+ 	    	}
+ 	    	}
+ 	    	catch(NumberFormatException Ex)
+ 	    	{
+ 	    		System.out.println("Please Enter Number between 1 to 4 Not Characters.");
+ 	    	}
+ 	    	catch(Exception Ex)
+ 	    	{
+ 	    		System.out.println(errorMessage);
+ 	    	}
+ 	    
+ 	    }
+ 		obj.close();
+         
+  	}
+     
  	    	    
 }
